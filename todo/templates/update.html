@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+<h1>ToDo update List</h1>
+{% block container %}
+<form action="" method="POST">
+    {% csrf_token %}
+    <table>{{ form }}</table>
+    <button type="submit">Update Todo</button>
+</form>
+
+{% endblock container %}
